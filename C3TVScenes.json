@@ -51,10 +51,10 @@
             "device_id": "default"
         },
         "sync": 0,
-        "volume": 0.4052240252494812
+        "volume": 0.34299999475479126
     },
-    "current_program_scene": "C3TV: Schleife 16:9",
-    "current_scene": "C3TV: Schleife 16:9",
+    "current_program_scene": "C3TV: Stream 16:9",
+    "current_scene": "C3TV: Stream 16:9",
     "current_transition": "Fade",
     "modules": {
         "auto-scene-switcher": {
@@ -154,13 +154,16 @@
     "scaling_off_y": 0.0,
     "scene_order": [
         {
-            "name": "C3TV: Schleife 16:9"
+            "name": "C3TV: Video 16:9"
         },
         {
-            "name": "C3TV: Schleife 4:3"
+            "name": "C3TV: Stream 16:9"
         },
         {
-            "name": "C3TV: Wartung"
+            "name": "C3TV: Stream 4:3"
+        },
+        {
+            "name": "C3TV: Maintenance"
         }
     ],
     "sources": [
@@ -177,25 +180,27 @@
                 "libobs.hide_scene_item.4:3 TWEETS #34c3": [],
                 "libobs.hide_scene_item.4:3 TWEETS #c3tv": [],
                 "libobs.hide_scene_item.4:3 TWEETS Likes": [],
+                "libobs.hide_scene_item.BG YELLOW": [],
                 "libobs.show_scene_item.16:9 VIDEO": [],
                 "libobs.show_scene_item.4:3 BG PURPLE": [],
                 "libobs.show_scene_item.4:3 LOGO": [],
                 "libobs.show_scene_item.4:3 TWEETS #34c3": [],
                 "libobs.show_scene_item.4:3 TWEETS #c3tv": [],
-                "libobs.show_scene_item.4:3 TWEETS Likes": []
+                "libobs.show_scene_item.4:3 TWEETS Likes": [],
+                "libobs.show_scene_item.BG YELLOW": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "C3TV: Schleife 16:9",
+            "name": "C3TV: Video 16:9",
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "id_counter": 9,
+                "id_counter": 8,
                 "items": [
                     {
                         "align": 5,
@@ -211,7 +216,155 @@
                         "crop_top": 0,
                         "id": 1,
                         "locked": true,
-                        "name": "4:3 BG PURPLE",
+                        "name": "BG PURPLE",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 1,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 5,
+                        "locked": true,
+                        "name": "16:9 VIDEO",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 8,
+                        "locked": true,
+                        "name": "LOGO",
+                        "pos": {
+                            "x": 74.0,
+                            "y": 66.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "color_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "BG YELLOW",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "color": 4278255615,
+                "height": 743,
+                "width": 1320
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.16:9 VIDEO": [],
+                "libobs.hide_scene_item.4:3 BG PURPLE": [],
+                "libobs.hide_scene_item.4:3 LOGO": [],
+                "libobs.hide_scene_item.4:3 TWEETS #34c3": [],
+                "libobs.hide_scene_item.4:3 TWEETS #c3tv": [],
+                "libobs.hide_scene_item.4:3 TWEETS Likes": [],
+                "libobs.hide_scene_item.Color Source": [],
+                "libobs.show_scene_item.16:9 VIDEO": [],
+                "libobs.show_scene_item.4:3 BG PURPLE": [],
+                "libobs.show_scene_item.4:3 LOGO": [],
+                "libobs.show_scene_item.4:3 TWEETS #34c3": [],
+                "libobs.show_scene_item.4:3 TWEETS #c3tv": [],
+                "libobs.show_scene_item.4:3 TWEETS Likes": [],
+                "libobs.show_scene_item.Color Source": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "C3TV: Stream 16:9",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "id_counter": 11,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 1,
+                        "locked": true,
+                        "name": "BG PURPLE",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -239,7 +392,7 @@
                         "crop_top": 0,
                         "id": 2,
                         "locked": true,
-                        "name": "4:3 TWEETS #34c3",
+                        "name": "TWEETS #34c3",
                         "pos": {
                             "x": 1320.0,
                             "y": 0.0
@@ -267,7 +420,7 @@
                         "crop_top": 0,
                         "id": 3,
                         "locked": true,
-                        "name": "4:3 TWEETS #c3tv",
+                        "name": "TWEETS #c3tv",
                         "pos": {
                             "x": 1320.0,
                             "y": 0.0
@@ -295,7 +448,7 @@
                         "crop_top": 0,
                         "id": 4,
                         "locked": true,
-                        "name": "4:3 TWEETS Likes",
+                        "name": "TWEETS Likes",
                         "pos": {
                             "x": 1320.0,
                             "y": 0.0
@@ -322,7 +475,7 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "id": 9,
-                        "locked": false,
+                        "locked": true,
                         "name": "16:9 VIDEO",
                         "pos": {
                             "x": 0.0,
@@ -349,9 +502,65 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "id": 11,
+                        "locked": true,
+                        "name": "BG YELLOW",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1319.0,
+                            "y": 743.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 1,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 10,
+                        "locked": true,
+                        "name": "16:9 VIDEO",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "id": 6,
                         "locked": true,
-                        "name": "4:3 LOGO",
+                        "name": "LOGO",
                         "pos": {
                             "x": 74.0,
                             "y": 66.0
@@ -380,7 +589,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "4:3 TWEETS Likes",
+            "name": "TWEETS Likes",
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -406,7 +615,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "4:3 TWEETS #34c3",
+            "name": "TWEETS #34c3",
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -431,7 +640,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "4:3 TWEETS #c3tv",
+            "name": "TWEETS #c3tv",
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -478,7 +687,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "BG PURPLE",
+            "name": "BG TOP PURPLE",
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -486,7 +695,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "color": 4284874803,
-                "height": 540,
+                "height": 260,
                 "width": 1920
             },
             "sync": 0,
@@ -502,7 +711,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "BG WHITE",
+            "name": "BG BOTTOM WHITE",
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -510,7 +719,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "color": 4294967295,
-                "height": 540,
+                "height": 820,
                 "width": 1920
             },
             "sync": 0,
@@ -526,7 +735,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "IMG Winkekatze",
+            "name": "IMG Maneki-neko",
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -564,7 +773,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "C3TV: Wartung",
+            "name": "C3TV: Maintenance",
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -587,16 +796,16 @@
                         "crop_top": 0,
                         "id": 2,
                         "locked": true,
-                        "name": "BG WHITE",
+                        "name": "BG BOTTOM WHITE",
                         "pos": {
                             "x": 0.0,
-                            "y": 540.0
+                            "y": 260.891357421875
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 0.99895834922790527,
+                            "y": 0.99891304969787598
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -615,7 +824,7 @@
                         "crop_top": 0,
                         "id": 3,
                         "locked": true,
-                        "name": "BG PURPLE",
+                        "name": "BG TOP PURPLE",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -643,10 +852,10 @@
                         "crop_top": 0,
                         "id": 1,
                         "locked": true,
-                        "name": "IMG Winkekatze",
+                        "name": "IMG Maneki-neko",
                         "pos": {
-                            "x": 1590.0,
-                            "y": 751.0
+                            "x": 1616.0,
+                            "y": 789.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -673,8 +882,8 @@
                         "locked": true,
                         "name": "TEXT @c3tv_de",
                         "pos": {
-                            "x": 1536.0,
-                            "y": 333.0
+                            "x": 1600.0,
+                            "y": 100.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -701,8 +910,8 @@
                         "locked": true,
                         "name": "IMG Twitter",
                         "pos": {
-                            "x": 1414.0,
-                            "y": 330.0
+                            "x": 1501.0,
+                            "y": 90.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -729,8 +938,8 @@
                         "locked": true,
                         "name": "IMG Logo",
                         "pos": {
-                            "x": 141.0,
-                            "y": 136.0
+                            "x": 67.0,
+                            "y": 51.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -757,8 +966,8 @@
                         "locked": true,
                         "name": "TEXT Status",
                         "pos": {
-                            "x": 150.0,
-                            "y": 647.0
+                            "x": 66.0,
+                            "y": 368.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -798,7 +1007,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "C3TV: Schleife 4:3",
+            "name": "C3TV: Stream 4:3",
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -821,7 +1030,7 @@
                         "crop_top": 0,
                         "id": 1,
                         "locked": true,
-                        "name": "4:3 BG PURPLE",
+                        "name": "BG PURPLE",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -849,7 +1058,7 @@
                         "crop_top": 0,
                         "id": 14,
                         "locked": true,
-                        "name": "4:3 TWEETS #34c3",
+                        "name": "TWEETS #34c3",
                         "pos": {
                             "x": 1320.0,
                             "y": 0.0
@@ -877,7 +1086,7 @@
                         "crop_top": 0,
                         "id": 9,
                         "locked": true,
-                        "name": "4:3 TWEETS #c3tv",
+                        "name": "TWEETS #c3tv",
                         "pos": {
                             "x": 1320.0,
                             "y": 0.0
@@ -905,7 +1114,7 @@
                         "crop_top": 0,
                         "id": 15,
                         "locked": true,
-                        "name": "4:3 TWEETS Likes",
+                        "name": "TWEETS Likes",
                         "pos": {
                             "x": 1320.0,
                             "y": 0.0
@@ -961,7 +1170,7 @@
                         "crop_top": 0,
                         "id": 6,
                         "locked": true,
-                        "name": "4:3 LOGO",
+                        "name": "LOGO",
                         "pos": {
                             "x": 74.0,
                             "y": 66.0
@@ -990,7 +1199,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "4:3 BG PURPLE",
+            "name": "BG PURPLE",
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1043,7 +1252,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "4:3 LOGO",
+            "name": "LOGO",
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1123,14 +1332,20 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
+                "chatlog": false,
                 "color": 6684723,
+                "extents": false,
                 "font": {
                     "face": "IBM Plex Sans",
                     "flags": 1,
                     "size": 100,
                     "style": ""
                 },
-                "text": "Wir sind gleich wieder da."
+                "gradient": false,
+                "outline": false,
+                "text": "Wir sind gleich wieder da.",
+                "valign": "center",
+                "vertical": false
             },
             "sync": 0,
             "volume": 1.0
