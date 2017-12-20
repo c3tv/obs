@@ -2,7 +2,7 @@
 This is the [C3TV](http://c3tv.de) resource for our [OBS](https://obsproject.com) scenes, widgets, graphics, and fonts.
 
 ## Instructions and tips
-* _Always_ use Studio Mode when streaming.
+* _Always_ use Studio Mode while streaming.
 * Our output resolution is _1920 × 1080_.
 * Install the fonts before importing the scenes. If you installed them while OBS was open, restart it.
 * Currently you have to manually change the paths of every source (video/images/widgets), sorry for that. OBS does not seem to support relative paths without changing them in the JSON file.
